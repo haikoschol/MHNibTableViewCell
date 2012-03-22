@@ -15,7 +15,7 @@
 {
 }
 
-@property (nonatomic, retain) IBOutlet UIView* customAccessoryView;
+@property (nonatomic, strong) IBOutlet UIView* customAccessoryView;
 @property (nonatomic, assign) UITableViewStyle tableStyle;
 
 @end

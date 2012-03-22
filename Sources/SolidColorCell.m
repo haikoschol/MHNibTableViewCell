@@ -5,14 +5,6 @@
 
 @synthesize customAccessoryView, customBackgroundView, customSelectedBackgroundView;
 
-- (void)dealloc
-{
-	[customAccessoryView release];
-	[customBackgroundView release];
-	[customSelectedBackgroundView release];
-	[super dealloc];
-}
-
 - (void)layoutSubviews
 {
 	[super layoutSubviews];

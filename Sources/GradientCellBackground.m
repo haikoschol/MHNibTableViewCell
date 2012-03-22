@@ -87,12 +87,6 @@ CGGradientRef SelectedBackgroundGradient()
 	return self;
 }
 
-- (void)dealloc
-{
-	[strokeColor release];
-	[super dealloc];
-}
-
 - (void)layoutSubviews
 {
 	// On rotation/resize/rescale, we need to redraw.

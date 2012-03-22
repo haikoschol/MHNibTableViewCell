@@ -25,7 +25,7 @@
 
 	UITableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
 	if (cell == nil)
-		cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
+		cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
 
 	if (indexPath.row == 0)
 		cell.textLabel.text = @"Solid Background Color (Plain)";
@@ -50,7 +50,7 @@
 
 - (void)tableView:(UITableView*)tableView didSelectRowAtIndexPath:(NSIndexPath*)indexPath
 {
-	UITableViewController* controller = nil;
+	UIViewController* controller = nil;
 
 	if (indexPath.row <= 1)
 	{
@@ -69,7 +69,6 @@
 	}
 
 	[self.navigationController pushViewController:controller animated:YES];
-	[controller release];
 }
 
 @end

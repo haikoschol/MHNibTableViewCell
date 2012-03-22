@@ -30,6 +30,6 @@
 @property (nonatomic, assign) BOOL selected;
 @property (nonatomic, assign) UITableViewStyle tableStyle;
 @property (nonatomic, assign) CellGroupPosition groupPosition;
-@property (nonatomic, retain) UIColor* strokeColor;
+@property (nonatomic, strong) UIColor* strokeColor;
 
 @end

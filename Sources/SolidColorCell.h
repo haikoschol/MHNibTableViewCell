@@ -21,8 +21,8 @@
 {
 }
 
-@property (nonatomic, retain) IBOutlet UIView* customAccessoryView;
-@property (nonatomic, retain) IBOutlet UIImageView* customBackgroundView;
-@property (nonatomic, retain) IBOutlet UIImageView* customSelectedBackgroundView;
+@property (nonatomic, strong) IBOutlet UIView* customAccessoryView;
+@property (nonatomic, strong) IBOutlet UIImageView* customBackgroundView;
+@property (nonatomic, strong) IBOutlet UIImageView* customSelectedBackgroundView;
 
 @end

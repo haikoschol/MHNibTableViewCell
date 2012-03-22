@@ -12,12 +12,6 @@
 	((GradientCellBackground*)self.selectedBackgroundView).selected = YES;
 }
 
-- (void)dealloc
-{
-	[customAccessoryView release];
-	[super dealloc];
-}
-
 - (void)groupPositionDidChange
 {
 	((GradientCellBackground*)self.backgroundView).groupPosition = self.groupPosition;

@@ -39,7 +39,7 @@ static NSMutableDictionary* nibs = nil;
 		Class cls = NSClassFromString(@"UINib");
 		if ([cls respondsToSelector:@selector(nibWithNibName:bundle:)])
 		{
-			nibs = [[NSMutableDictionary dictionaryWithCapacity:10] retain];
+			nibs = [NSMutableDictionary dictionaryWithCapacity:10];
 		}	
 	}
 }
@@ -101,7 +101,7 @@ static NSMutableDictionary* nibs = nil;
 		{
 			if ([item isKindOfClass:[UITableViewCell class]])
 			{
-				return [[item retain] autorelease];
+				return item;
 			}
 		}
 	}

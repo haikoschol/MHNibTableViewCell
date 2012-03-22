@@ -5,14 +5,6 @@
 
 @synthesize topLabel, bottomLabel, customImageView;
 
-- (void)dealloc
-{
-	[topLabel release];
-	[bottomLabel release];
-	[customImageView release];
-	[super dealloc];
-}
-
 - (void)groupPositionDidChange
 {
 	UIImage* backgroundImage = nil;

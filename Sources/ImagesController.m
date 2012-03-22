@@ -6,12 +6,6 @@
 
 @synthesize tableView;
 
-- (void)dealloc
-{
-	[tableView release];
-	[super dealloc];
-}
-
 - (void)viewDidLoad
 {
 	[super viewDidLoad];

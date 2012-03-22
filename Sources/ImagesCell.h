@@ -18,8 +18,8 @@
 {
 }
 
-@property (nonatomic, retain) IBOutlet UILabel* topLabel;
-@property (nonatomic, retain) IBOutlet UILabel* bottomLabel;
-@property (nonatomic, retain) IBOutlet UIImageView* customImageView;
+@property (nonatomic, strong) IBOutlet UILabel* topLabel;
+@property (nonatomic, strong) IBOutlet UILabel* bottomLabel;
+@property (nonatomic, strong) IBOutlet UIImageView* customImageView;
 
 @end
